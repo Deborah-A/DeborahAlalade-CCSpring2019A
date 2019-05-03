@@ -20,7 +20,7 @@ void setup() {
   colorMode(HSB, 360, 100, 1); //max limit for brightness is 1 so that amp can correlated to it
 
   img = loadImage("picture.png"); //loads the picture
-  music = new SoundFile(this, "TheProcess.wav"); //mp3 files dont work, keep getting arrayindexoutofbound
+  music = new SoundFile(this, "TheProcess.mp3"); //mp3 files dont work, keep getting arrayindexoutofbound & .wav file is too big for github
   music.play(); //defaults the music to start playing
 
   amp = new Amplitude(this); //something something allows amplitude of a file to be stored 
